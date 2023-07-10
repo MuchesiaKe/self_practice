@@ -13,7 +13,7 @@ int main(void)
 
 	printf("Enter number of elements in the array:");
 	scanf("%d", &n);
-	arr = (int *)malloc(sizeof(int) * n);
+	arr = malloc(sizeof(int) * n);
 
 	for (i = 0; i < n; i++)
 		arr[i] = i + 1;
