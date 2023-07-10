@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
 *main - illustrate 1[v] array notation
+*Return: 0 for success, non-zero for error
 **/
 
 int main(void)
