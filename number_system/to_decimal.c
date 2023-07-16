@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
 *to_decimal - converts from other bases to decimal
@@ -36,8 +37,24 @@ int to_decimal(int number, int base)
 *Return: 0 for success, non-zero for failure
 **/
 
-int main(void)
+int main(int argc, char **argv)
 {
-	printf("%d\n", to_decimal(147, 16));
+	int a, b;
+
+	if (argc < 3)
+	{
+		printf("Usage: number base\n");
+		printf("Enter number to convert to decimal:\n");
+		scanf("%d", &a);
+		printf("Enter the base of the entered number:\n");
+		scanf("%d", &b);
+	}
+
+	else
+	{
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
+	}
+	printf("%d base %d to decimal is %d\n", a, b, to_decimal(a, b));
 	return (0);
 }
