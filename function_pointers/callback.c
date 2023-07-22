@@ -27,5 +27,6 @@ int main(void)
 	void (*p)() = A;
 
 	B(p);
+	B(A);
 	return (0);
 }
