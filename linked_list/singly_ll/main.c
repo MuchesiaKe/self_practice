@@ -22,5 +22,10 @@ int main(void)
 	insert_after(head->next->next->next, 1);
 	printf("After inserting 1 after 2: ");
 	print_list(head);
+	printf("Before inserting at the end\n");
+	print_list(head);
+	insert_end(head, 9);
+	printf("After inserting at the end\n");
+	print_list(head);
 	return (0);
 }
