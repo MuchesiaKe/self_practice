@@ -1,0 +1,6 @@
+Hello! Friends
+Welcome to UNIX / LINUX Commands
+grep filter is used to search pattern in files.
+grep is command in unix
+Unix
+UNIx
