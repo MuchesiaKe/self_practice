@@ -12,5 +12,6 @@ int main(void)
 	fptr = fopen("filename.txt", "w");
 	fprintf(fptr, "%s %s %s %d", "We", "are", "in", 2023);
 	fputc('a', fptr);
+	fclose(fptr);
 	return (0);
 }

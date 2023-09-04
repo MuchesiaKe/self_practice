@@ -22,5 +22,6 @@ int main()
 	{
 		printf("The file is created successfully.\n");
 	}
+	fclose(fptr);
 	return (0);
 }
