@@ -12,6 +12,7 @@ void str_arr(char *str)
 	int i, j, word_size, words;
 	char **arr;
 
+	printf("Do we get here?");
 	word_size = words = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -55,6 +56,9 @@ void str_arr(char *str)
 
 int main(void)
 {
-	str_arr("Hello world for testing program\n");
+	char str[50] = "This is just for testing the above code";
+	printf("Do we get here?");
+
+	str_arr(str);
 	return (0);
 }

@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <sys/wait.h>
 
 /**
 *main - illustrating the concept of fork, wait and execve
@@ -8,14 +9,19 @@
 
 int main(void)
 {
-	int i, id;
+	int i;
+	pid_t pid;
+	char *argv[] = {"/bin/ls", "-l", "/tmp", NULL};
 
+	i = 0;
 	while (i < 5)
 	{
-		id = fork();
-		if (id == 0)
-		{
-			execve(
-		}
+		pid = fork();
+		if (pid == 0)
+			execve(argv[0], argv, NULL);
+		else
+			wait(NULL);
+		i++;
 	}
+	return (0);
 }
