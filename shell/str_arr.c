@@ -7,6 +7,7 @@
 *Return: pointer to an array of strings
 **/
 
+
 void str_arr(char *str)
 {
 	int i, j, word_size, words;
