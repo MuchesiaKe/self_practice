@@ -39,6 +39,7 @@ void str_arr(char *str)
 		}
 		arr[j++] = malloc(sizeof(**arr) * (word_size + 1));
 	}
+
 	for (i = 0; i < (words + 1); i++)
 	{
 		for (j = 0; *str != ' ' || *str != '\t' ; j++)
